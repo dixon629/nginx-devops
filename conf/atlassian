@@ -80,7 +80,7 @@ http {
 
     server {
         listen 80;
-        server_name devops-support-incu.daimler.com.cn
+        server_name devops-support-incu.daimler.com.cn;
 
         location /confluence {
             client_max_body_size 300m;

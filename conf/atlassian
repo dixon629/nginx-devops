@@ -83,11 +83,8 @@ http {
         server_name devops-support-incu.daimler.com.cn;
 
         location / {
-          client_max_body_size 100M;
-          proxy_set_header X-Forwarded-Host $host;
-          proxy_set_header X-Forwarded-Server $host;
-          proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-          proxy_pass http://172.21.4.133:8080;
+          root   /usr/share/nginx/html;
+          index  index.html index.htm;
         }
     }
 
